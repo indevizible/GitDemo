@@ -11,16 +11,12 @@
 	<key>data</key>
 	<array>
 		<dict>
-			<key>type</key>
-			<string>regular</string>
 			<key>title</key>
 			<string>Summary</string>
 			<key>details</key>
 			<string>I am a senior iOS engineer who is originally from Thailand. I have been familiar with computer languages for more than 10 years and specifically for iOS architecture for more than 4 years, and also have involved and led the teams to produce the iOS apps more than 10 apps. Besides iOS stuff, I am also used to some of backend stuff.  I have been working for freelance and for the agency. I am now avialable for full time and freelance opportunities.</string>
 		</dict>
 		<dict>
-			<key>type</key>
-			<string>regular</string>
 			<key>title</key>
 			<string>Skills</string>
 			<key>details</key>
@@ -46,8 +42,6 @@
 			</dict>
 		</dict>
 		<dict>
-			<key>type</key>
-			<string>regular</string>
 			<key>title</key>
 			<string>Experience</string>
 			<key>details</key>

@@ -8,6 +8,7 @@
 
 import UIKit
 import Charts
+import Alamofire
 
 class DemoTableViewController: UITableViewController {
     
@@ -26,6 +27,17 @@ class DemoTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.registerNib(UINib(nibName: "DemoHeaderView", bundle: NSBundle.mainBundle()), forHeaderFooterViewReuseIdentifier: "DemoHeaderView")
+        Alamofire.request(.GET, "https://raw.githubusercontent.com/indevizible/GitDemo/master/SampleData.plist").responsePropertyList { result in
+            switch result.result {
+            case .Success(let plist):
+                self.data = plist as? [String : AnyObject]
+                self.tableView.reloadData()
+            case .Failure(let error):
+                let alertView = UIAlertController(title: "Failure", message: error.localizedDescription, preferredStyle: .Alert)
+                alertView.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                self.presentViewController(alertView, animated: true, completion: nil)
+            }
+        }
         
     
         if let data = NSDictionary(contentsOfURL: NSBundle.mainBundle().URLForResource("SampleData", withExtension: "plist")!) as? [String:AnyObject]{

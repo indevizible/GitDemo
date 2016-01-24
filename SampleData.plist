@@ -20,7 +20,7 @@
 			<key>title</key>
 			<string>Skills</string>
 			<key>details</key>
-			<string>iOS Development, Swift, Objective-C, Cocoa, JavaScript, Git, Node.js, C</string>
+			<string>iOS Development, Swift, Objective-C, Cocoa, JavaScript, Git, Node.js, C, C++</string>
 			<key>chart</key>
 			<dict>
 				<key>iOS Development</key>
@@ -32,12 +32,12 @@
 				<key>Cocoa</key>
 				<integer>5</integer>
 				<key>JavaScript</key>
-				<integer>5</integer>
+				<integer>6</integer>
 				<key>Git</key>
 				<integer>7</integer>
 				<key>Node.js</key>
 				<integer>5</integer>
-				<key>C</key>
+				<key>C,C++</key>
 				<integer>5</integer>
 			</dict>
 		</dict>

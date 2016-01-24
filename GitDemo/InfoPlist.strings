@@ -1,0 +1,13 @@
+/* 
+  InfoPlist.strings
+  GitDemo
+
+  Created by Nattawut Singhchai on 1/24/16.
+  Copyright © 2016 Nattawut Singhchai. All rights reserved.
+*/
+
+
+"CFBundleDisplayName" = "Nattawut S.";
+
+"CFBundleName" = "Nattawut S.";
+
